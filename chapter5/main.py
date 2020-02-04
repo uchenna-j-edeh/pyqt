@@ -1,4 +1,6 @@
 import sys
+import os
+
 import argparse
 import pandas as pd
 
@@ -38,7 +40,8 @@ if __name__ == "__main__":
     # options.add_argument("-f", "--file", type=str, required=True)
     # args = options.parse_args()
     # data = read_data(args.file)
-    data = read_data('/Users/uchenna/pyqt/tutorial/chapter5/all_day_1.csv')
+    path = os.path.dirname(__file__)
+    data = read_data(os.path.join(path, 'all_day_1.csv'))
     
     app = QApplication(sys.argv)
 
