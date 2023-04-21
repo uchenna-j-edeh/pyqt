@@ -23,6 +23,7 @@ from PySide2.QtWidgets import (
     QTimeEdit,
     QVBoxLayout,
     QWidget,
+#    QMessageBox
 )
 
 
@@ -51,6 +52,7 @@ class MainWindow(QMainWindow):
             QSlider,
             QSpinBox,
             QTimeEdit,
+#            QMessageBox
         ]
 
         for w in widgets:
